@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,315 +5,175 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>Ramayan by Ramanand Sagar</title>
     <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <style>
+        body {
+            background-color: #f9fafb;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar {
+            background-color: #f5c518;
+        }
+
+        .navbar-nav .nav-link {
+            color: #333;
+            font-weight: bold;
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #fff;
+            background-color: #f5a623;
+            border-radius: 5px;
+            padding: 5px 10px;
+        }
+
+        h1, h2 {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .btn-primary-custom {
+            background-color: #1c73e8;
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary-custom:hover {
+            background-color: #155cb0;
+        }
+
+        .section-bg {
+            background: linear-gradient(135deg, #ffdf85, #ffedbf);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s;
+        }
+
+        .footer {
+            background-color: #f5c518;
+            color: white;
+            padding: 20px 0;
+        }
+    </style>
 </head>
 
-<body class="bg-yellow-500">
-    <div class="container mx-auto p-4 text-center">
-        <div class="flex justify-between items-center">
-            <a href="./index.html">
-                <img src="https://freepngimg.com/thumb/rama/88667-body-jewelry-ramayana-sita-text-rama.png"
-                    height="200px" width="200px" alt="Ramayan">
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <img src="https://freepngimg.com/thumb/rama/88667-body-jewelry-ramayana-sita-text-rama.png" height="70px"
+                    alt="Ramayan">
             </a>
-            <div class="flex items-center">
-                <a href="https://www.instagram.com/1shahdhairya" target="_blank" class="text-black text-3xl mx-2">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a href="https://github.com/shahdhairya12/" target="_blank" class="text-black text-3xl mx-2">
-                    <i class="fab fa-github"></i>
-                </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#journey">Journey</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#characters">Characters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#quiz">Quizzes</a>
+                    </li>
+                </ul>
             </div>
         </div>
-        <h1 class="text-3xl md:text-5xl font-bold text-black mb-2">Ramayan</h1>
-        <p class="mb-5 text-3xl">watch all the episode of the Ramayan by Ramanand Sagar</p>
-        <a href="./ramayan.html"
-            class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full inline-block transition duration-300">Watch
-            Episodes</a>
-        <!-- Life Events Section -->
-        <section class="my-8 bg-gray-200 p-6 rounded-md shadow-md">
-            <h2 class="text-2xl font-bold mb-4 text-black">The Journey of Lord Ram</h2>
-            <ul class="text-left leading-7">
-                <li class="mb-4">
-                    <strong class="text-black">Birth:</strong>
-                    Lord Ram, the embodiment of righteousness, took his first breath in the sacred city of Ayodhya. His
-                    arrival,
-                    celebrated annually as Ram Navami, filled the kingdom with divine radiance, bringing joy and
-                    prosperity to
-                    all.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Marriage:</strong>
-                    In the illustrious Swayamvar ceremony, Lord Ram showcased his strength and devotion by lifting Lord
-                    Shiva's
-                    divine bow, earning the hand of Sita. Their union symbolizes the eternal bond of love and virtue.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Exile:</strong>
-                    The profound commitment to honor his father's promise led Ram into the enchanting forests. For 14
-                    years, he
-                    embraced simplicity, learned from sages, and connected with nature, exemplifying humility and
-                    resilience.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Abduction of Sita:</strong>
-                    The dark clouds of destiny cast their shadows as the demon king Ravana abducted Sita. The ensuing
-                    struggle
-                    epitomizes the eternal battle between good and evil, righteousness, and deception.The primary
-                    motive behind this heinous act was Ravana's desire for revenge and his obsession with possessing
-                    Sita's unparalleled beauty.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Searching for Beloved/Sita:</strong>
-                    Driven by love and determination, Lord Ram embarked on a perilous journey to find his beloved Sita,
-                    facing
-                    numerous challenges and forming alliances to aid in his quest.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Help of the Kishkindha:</strong>
-                    Seeking assistance from the mighty Vanara king Sugriva and the devoted Hanuman, Lord Ram formed an
-                    alliance
-                    with the Kishkindha to aid in the search for Sita.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Lanka Dahan:</strong>
-                    The climax of the epic, The Great Hanuman, with unwavering determination and divine guidance, set
-                    Lanka ablaze, showcasing his immense strength and devotion to Lord Ram, bringing an end to the
-                    tyranny of Ravana and paving the way for the final confrontation.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Ram Setu:</strong>
-                    To reach Lanka, Lord Ram and his army built a bridge, known as Ram Setu, across the ocean with
-                    stones
-                    inscribed with Lord Ram's name, showcasing the power of devotion and divine intervention.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">War with Patience:</strong>
-                    The battle of Lanka and the subsequent war against Ravana's forces exemplify Lord Ram's unwavering
-                    patience
-                    and commitment to righteousness, ultimately leading to the triumph of good over evil.
-                </li>
-                <li class="mb-4">
-                    <strong class="text-black">Return to Ayodhya:</strong>
-                    Ayodhya, once shrouded in darkness, radiated with the joyous return of Lord Ram. The heartwarming
-                    welcome by
-                    his loyal subjects marked the beginning of the golden era, a testament to the victory of light over
-                    darkness.
-                </li>
-                <li>
-                    <strong class="text-black">Departure from Earth:</strong>
-                    Lord Ram's divine journey on Earth concluded as he returned to his celestial abode. His teachings,
-                    embedded
-                    in the hearts of his devotees, continue to inspire and guide humanity towards righteousness and
-                    compassion.
-                </li>
-            </ul>
-        </section>
+    </nav>
 
-        <!-- Character Profiles Section -->
-        <section class="my-8 bg-gray-200 p-6 rounded-md shadow-md">
-            <h2 class="text-2xl font-bold mb-4 text-black">Character Profiles</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Dasharatha</h3>
-                    <p>The king of Ayodhya and father of Rama, Dasharatha's decisions set the stage for Rama's exile,
-                        illustrating the complexities of duty and familial ties.</p>
-                </div>
+    <!-- Hero Section -->
+    <section class="text-center bg-light p-5">
+        <h1 class="display-4">Ramayan</h1>
+        <p class="lead">Watch all episodes of the Ramayan by Ramanand Sagar</p>
+        <a href="./ramayan.html" class="btn btn-primary-custom px-5 py-2">Watch Episodes</a>
+    </section>
 
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Kaikeyi</h3>
-                    <p>One of Dasharatha's wives and the mother of Bharata. Her actions play a significant role in
-                        Rama's exile.</p>
-                </div>
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Kaushalya</h3>
-                    <p>Lord Rama's biological mother and the queen of Ayodhya. Her love and guidance shaped Lord Rama's
-                        character and destiny.</p>
-                </div>
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Sumitra</h3>
-                    <p>Lord Rama's third mother and the queen of Ayodhya. She played a significant role in the
-                        upbringing of Lord Rama and his brothers.</p>
-                </div>
-
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Rama</h3>
-                    <p>The protagonist of the epic, Prince of Ayodhya, and the seventh avatar of the god Vishnu.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">King Janak</h3>
-                    <p>The wise and noble king of Mithila, and the father of Sita. King Janak played a pivotal role in
-                        the Ramayana as he hosted the Swayamvar where Lord Rama broke Lord Shiva's divine bow to win
-                        Sita's hand in marriage.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Sita</h3>
-                    <p>Rama's wife, who is kidnapped by Ravana, leading to the main events of the epic.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Lakshmana</h3>
-                    <p>Rama's younger brother and a devoted companion. He accompanies Rama and Sita during their exile.
-                    </p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Sugriva</h3>
-                    <p>The monkey king who becomes an ally of Rama. Hanuman helps him regain his kingdom from his
-                        brother Vali.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Hanuman</h3>
-                    <p>A powerful monkey god and a devoted follower of Rama. He plays a crucial role in the rescue of
-                        Sita.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Ravana</h3>
-                    <p>The primary antagonist of the epic, a powerful demon king who kidnaps Sita.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Vibhishana</h3>
-                    <p>Ravana's younger brother, who defects to Rama's side during the war.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Bharata</h3>
-                    <p>Rama's younger half-brother and the son of Kaikeyi. He is devoted to Rama and rules Ayodhya in
-                        his absence.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Vali</h3>
-                    <p>Sugriva's brother and the previous monkey king, who is defeated by Rama.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Jatayu</h3>
-                    <p>A vulture and a friend of Rama who tries to rescue Sita from Ravana but is mortally wounded in
-                        the process.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Shurpanakha</h3>
-                    <p>Ravana's sister, whose advances towards Rama and Lakshmana lead to a chain of events.</p>
-                </div>
-
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Trijata</h3>
-                    <p>A demoness in Ravana's palace who sympathizes with Sita and tries to comfort her.</p>
-                </div>
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Shatrughna</h3>
-                    <p>The fourth brother of Lord Rama, known for his loyalty and service to his elder brothers.</p>
-                </div>
-                <div
-                    class="border border-black rounded-md p-4 transition-transform transform hover:scale-105 hover:shadow-lg hover:bg-gray-300">
-                    <h3 class="text-lg font-bold mb-2">Kumbhakarna</h3>
-                    <p>Ravana's brother, known for his immense strength and loyalty. Despite being awakened only for a
-                        brief period during the war, he played a significant role in the battle.</p>
-                </div>
+    <!-- The Journey of Lord Ram -->
+    <section class="container my-5 p-4 section-bg" id="journey">
+        <h2 class="mb-4">The Journey of Lord Ram</h2>
+        <div class="row">
+            <div class="col-lg-6 mb-3">
+                <p><strong>Birth:</strong> Lord Ram, the embodiment of righteousness, took his first breath in the sacred city of Ayodhya...</p>
             </div>
-        </section>
-
-        <!-- Trivia and Quizzes Section -->
-        <section class="my-8 bg-gray-200 p-6 rounded-md shadow-md">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4 text-black">Test Your Knowledge</h2>
-            <p class="text-lg text-gray-800 mb-4">Explore the world of Ramayan through our interactive quizzes. Click
-                the links below to start:</p>
-
-            <ul class="list-inside list-disc">
-                <li class="mb-2">
-                    <a href="./quiz1.html" class="text-black hover:underline">Quiz 1: Introduction to Ramayan</a>
-                </li>
-                <!-- Add more quiz links as needed -->
-            </ul>
-        </section>
-
-        <div class="mt-8">
-            <h2 class="text-3xl font-bold mb-6 text-black">Send us your review</h2>
-            <form name="submit-to-google-sheet"
-                class="border border-yellow-600 max-w-xl mx-auto p-8 bg-white rounded-md shadow-md">
-                <div class="mb-6">
-                    <label for="name" class="text-gray-800 block mb-2">Your Name:</label>
-                    <input type="text" id="name" name="name"
-                        class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent bg-gray-100">
-                </div>
-                <div class="mb-6">
-                    <label for="email" class="text-gray-800 block mb-2">Your Email:</label>
-                    <input type="email" id="email" name="email"
-                        class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent bg-gray-100">
-                </div>
-                <div class="mb-6">
-                    <label for="review" class="text-gray-800 block mb-2">Share Your Review:</label>
-                    <textarea id="review" name="review" rows="4"
-                        class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-yellow-600 focus:border-transparent bg-gray-100"></textarea>
-                </div>
-                <button id="btntosub" type="button"
-                    class="bg-yellow-600 hover:bg-yellow-700 text-white font-bold py-3 px-6 rounded-full inline-block transition duration-300">
-                    Send Message
-                </button>
-            </form>
+            <div class="col-lg-6 mb-3">
+                <p><strong>Marriage:</strong> In the illustrious Swayamvar ceremony, Lord Ram earned the hand of Sita...</p>
+            </div>
+            <!-- More content can follow here -->
         </div>
+    </section>
 
-
-        <hr class="my-8">
-        <footer class="mt-4 text-center">
-            <div class="foot">
-                <h1 class="text-2xl">Made by <a href="https://github.com/shahdhairya12/" target="_blank"
-                        class="underline">dhairya</a>
-                    with ❤</h1>
+    <!-- Character Profiles -->
+    <section class="container my-5 p-4 section-bg" id="characters">
+        <h2 class="mb-4">Character Profiles</h2>
+        <div class="row">
+            <div class="col-md-4 hover-effect mb-4">
+                <div class="card h-100 p-3 shadow-sm">
+                    <h3 class="card-title">Rama</h3>
+                    <p>The protagonist and seventh avatar of Vishnu...</p>
+                </div>
             </div>
-        </footer>
-    </div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BNC60ZWM1K"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+            <div class="col-md-4 hover-effect mb-4">
+                <div class="card h-100 p-3 shadow-sm">
+                    <h3 class="card-title">Sita</h3>
+                    <p>Rama's devoted wife, the embodiment of purity...</p>
+                </div>
+            </div>
+            <!-- Add more character cards here -->
+        </div>
+    </section>
 
-        gtag('config', 'G-BNC60ZWM1K');
-    </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbzW06TEl5ZNAZj0oE3YEFPDBLUnyDBc7wwWJdMNfHJClSWUgyRQHiNU1maEyRNQOMDE/exec';
-        const form = document.forms['submit-to-google-sheet'];
-        const msg = document.getElementById('msg');
-        const btn = document.getElementById('btntosub')
-        btn.addEventListener('click', e => {
-            e.preventDefault();
-            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                .then(response => {
-                    form.reset();
-                })
-                .catch(error => console.error('Error!', error.message));
-        });
-    </script>
+    <!-- Trivia and Quizzes -->
+    <section class="container my-5 p-4 section-bg" id="quiz">
+        <h2 class="text-center mb-4">Test Your Knowledge</h2>
+        <ul class="list-unstyled">
+            <li class="mb-2">
+                <a href="./quiz1.html" class="btn btn-outline-dark">Quiz 1: Introduction to Ramayan</a>
+            </li>
+        </ul>
+    </section>
 
+    <!-- Review Form -->
+    <section class="container my-5">
+        <h2 class="text-center mb-4">Send us your review</h2>
+        <form class="row g-3 border p-4 bg-white shadow-sm rounded">
+            <div class="col-md-6">
+                <label for="name" class="form-label">Your Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name">
+            </div>
+            <div class="col-md-6">
+                <label for="email" class="form-label">Your Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="col-12">
+                <label for="review" class="form-label">Share Your Review:</label>
+                <textarea class="form-control" id="review" rows="4" placeholder="Write your review"></textarea>
+            </div>
+            <div class="col-12 text-center">
+                <button type="submit" class="btn btn-warning">Send Message</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center">
+        <p>Made by <a href="https://github.com/shahdhairya12/" class="text-white text-decoration-underline">Dhairya</a> with ❤</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
